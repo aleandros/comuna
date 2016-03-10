@@ -8,7 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Comuna::VERSION
   spec.authors       = ["Edgar Cabrera"]
   spec.email         = ["edgar@cafeinacode.com"]
-
+  spec.licenses    = ['MIT']
+  
   spec.summary       = %q{Small, easy to configure DNS server for local networks.}
   spec.description   = %q{Leverages the power of RubyDNS and the simplicity of YAML for a simple DNS server for local networks.}
   spec.homepage      = "https://github.com/aleandros/comuna"
@@ -16,7 +17,7 @@ Gem::Specification.new do |spec|
   # Prevent pushing this gem to RubyGems.org by setting 'allowed_push_host', or
   # delete this section to allow pushing this gem to any host.
   if spec.respond_to?(:metadata)
-    spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com'"
+    spec.metadata['allowed_push_host'] = "https://rubygems.org"
   else
     raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
   end
