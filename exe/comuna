@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+require 'comuna/server'
+require 'comuna/config'
+require 'thor'
+
+module Comuna
+  class ComunaCLI < Thor
+    desc 'server', 'Start server'
+    def server
+      config = Config.new
+      Server.new(config).call
+    end
+  end
+end
+
+Comuna::ComunaCLI.start(ARGV)
